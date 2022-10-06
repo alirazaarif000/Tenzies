@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+body{
+    background-color: #0B2434;
+    font-family: 'Karla', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    width:50%;
+    height:500px;
+    flex-direction: column;
+
+}
+.container{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap:40px;
+}
+.die{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.btn-roll{
+    padding: 15px 60px;
+    background-color: #5035FF;
+    border: none;
+    border-radius: 7px;
+    color:white;
+    font-size: x-large;
+    font-weight: 700;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.btn-roll:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+
+}
+
+.title{
+    font-size: 3rem;
+    margin: 0;
+}
+.description{
+    width:70%;
+    font-size: 1.2rem;
+}
+.die-dots{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 12px;
+}
+.dot1{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    margin:4px;
+}
