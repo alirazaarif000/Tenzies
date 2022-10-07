@@ -7,8 +7,6 @@ export default function App(){
     const [diceFunc, setDiceFunc]= useState(allNewDice())
     const [tenzies, setTenzies] =useState(false)
     const [countRoll, setCountRoll]= useState(0)
-
-    
     
     useEffect(()=>{
         const allHeld= diceFunc.every(die=> die.isHeld)

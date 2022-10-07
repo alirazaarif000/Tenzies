@@ -5,8 +5,6 @@ export default function Die(props) {
         backgroundColor: props.isHeld ? "#59E391" : "#ffffff"
     }
     function dot() {
-        const dotElement=[]
-        const spanElement= <span className="dot1"></span>
         if (props.value === 1) {
             return (
                 <div className="die" style={styles} onClick={props.holdDice}>
